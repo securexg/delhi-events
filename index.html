@@ -127,9 +127,14 @@
       text-decoration: underline;
     }
 
-    .event-link {
-      display: inline-block;
+    .event-actions {
+      display: flex;
+      gap: 12px;
       margin-top: 16px;
+    }
+    .event-link {
+      flex: 1;
+      display: inline-block;
       padding: 10px 20px;
       background: var(--primary);
       color: white;
@@ -138,9 +143,27 @@
       font-size: 14px;
       font-weight: 500;
       transition: background 0.2s;
+      text-align: center;
     }
     .event-link:hover {
       background: var(--primary-dark);
+    }
+    .calendar-link {
+      flex: 1;
+      display: inline-block;
+      padding: 10px 20px;
+      background: white;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .calendar-link:hover {
+      background: var(--primary-light);
     }
 
     .footer {
@@ -164,42 +187,45 @@
       <p>Upcoming meetups and networking events</p>
     </div>
 
-    <!-- Event 1 -->
+    <!-- Event 1: May 27 -->
     <div class="event-card">
       <div class="event-header">
         <div>
-          <div class="event-title">AI Builders Meet-up 2026</div>
-          <div class="event-organizer">Indian Data Club</div>
+          <div class="event-title">23 Years of WordPress — Cake, Coffee & Community</div>
+          <div class="event-organizer">WordPress Delhi NCR Meetup</div>
         </div>
-        <div class="event-badge">AI</div>
+        <div class="event-badge">WordPress</div>
       </div>
       <div class="event-details">
         <div class="detail-row">
           <div class="detail-icon">📅</div>
           <div class="detail-content">
             <div class="detail-label">Date</div>
-            <div class="detail-value">Saturday, June 13, 2026 • 10:30 - 13:30</div>
+            <div class="detail-value">Wednesday, May 27, 2026 • 4:00 PM - 5:30 PM</div>
           </div>
         </div>
         <div class="detail-row">
           <div class="detail-icon">📍</div>
           <div class="detail-content">
             <div class="detail-label">Location</div>
-            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=ThoughtWorks+Technologies+Gurugram" target="_blank">ThoughtWorks Technologies, Gurugram, Haryana</a></div>
+            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=Indian+Coffee+House+Connaught+Place+New+Delhi" target="_blank">Indian Coffee House, Connaught Place, New Delhi</a></div>
           </div>
         </div>
         <div class="detail-row">
-          <div class="detail-icon">🎤</div>
+          <div class="detail-icon">💰</div>
           <div class="detail-content">
-            <div class="detail-label">Speakers</div>
-            <div class="detail-value">Nitish Singh (Founder @CampusX)</div>
+            <div class="detail-label">Cost</div>
+            <div class="detail-value">Free (coffee on your own)</div>
           </div>
         </div>
       </div>
-      <a href="https://luma.com/2782mgfb" target="_blank" class="event-link">View Event →</a>
+      <div class="event-actions">
+        <a href="https://www.meetup.com/wordpress-new-delhi/events/314872624/" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=23+Years+of+WordPress&dates=20260527T103000Z/20260527T123000Z&location=Indian+Coffee+House,+Connaught+Place,+New+Delhi&details=Cake+cutting+ceremony+%2B+Networking+over+coffee" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
     </div>
 
-    <!-- Event 2 -->
+    <!-- Event 2: May 29 -->
     <div class="event-card">
       <div class="event-header">
         <div>
@@ -231,45 +257,13 @@
           </div>
         </div>
       </div>
-      <a href="https://www.eventbrite.com/e/delhi-tech-mixer-and-social-tech-ai-data-it-tickets-1987417470153" target="_blank" class="event-link">View Event →</a>
+      <div class="event-actions">
+        <a href="https://www.eventbrite.com/e/delhi-tech-mixer-and-social-tech-ai-data-it-tickets-1987417470153" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Delhi+Tech+Mixer+and+Social&dates=20260529T133000Z/20260529T163000Z&location=The+Beer+Café,+Connaught+Place,+Delhi&details=Networking+with+tech+professionals" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
     </div>
 
-    <!-- Event 3 -->
-    <div class="event-card">
-      <div class="event-header">
-        <div>
-          <div class="event-title">Builders Connect: The Delhi Edition</div>
-          <div class="event-organizer">Flutter Delhi 🤝 FFDG New Delhi</div>
-        </div>
-        <div class="event-badge">Flutter</div>
-      </div>
-      <div class="event-details">
-        <div class="detail-row">
-          <div class="detail-icon">📅</div>
-          <div class="detail-content">
-            <div class="detail-label">Date</div>
-            <div class="detail-value">June 20th, 2026</div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">📍</div>
-          <div class="detail-content">
-            <div class="detail-label">Location</div>
-            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=Masters'+Union+School+of+Business+Gurugram" target="_blank">Masters' Union School of Business, Gurugram, Haryana</a></div>
-          </div>
-        </div>
-        <div class="detail-row">
-          <div class="detail-icon">💰</div>
-          <div class="detail-content">
-            <div class="detail-label">Cost</div>
-            <div class="detail-value">Free entry, limited seats</div>
-          </div>
-        </div>
-      </div>
-      <a href="https://luma.com/384qnir0" target="_blank" class="event-link">View Event →</a>
-    </div>
-
-    <!-- Event 4 -->
+    <!-- Event 3: May 30 -->
     <div class="event-card">
       <div class="event-header">
         <div>
@@ -301,7 +295,162 @@
           </div>
         </div>
       </div>
-      <a href="https://luma.com/kdiugt4g" target="_blank" class="event-link">View Event →</a>
+      <div class="event-actions">
+        <a href="https://luma.com/kdiugt4g" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Let%27s+Talk+for+Founders&dates=20260530T123000Z/20260530T143000Z&location=Connaught+Place,+New+Delhi&details=Founder-to-founder+conversations" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
+    </div>
+
+    <!-- Event 4: May 31 -->
+    <div class="event-card">
+      <div class="event-header">
+        <div>
+          <div class="event-title">Agentic Premier League</div>
+          <div class="event-organizer">Buildathon with Google AI</div>
+        </div>
+        <div class="event-badge">AI</div>
+      </div>
+      <div class="event-details">
+        <div class="detail-row">
+          <div class="detail-icon">📅</div>
+          <div class="detail-content">
+            <div class="detail-label">Date</div>
+            <div class="detail-value">Sunday, May 31, 2026 • 5:30 PM - 10:30 PM</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">📍</div>
+          <div class="detail-content">
+            <div class="detail-label">Location</div>
+            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=Moire+Café+Lounge+Gardens+Galleria+Mall+Sector+38+Noida" target="_blank">Moire Cafe Lounge & Bar, Gardens Galleria Mall, Sector 38, Noida</a></div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">💰</div>
+          <div class="detail-content">
+            <div class="detail-label">Cost</div>
+            <div class="detail-value">TBD</div>
+          </div>
+        </div>
+      </div>
+      <div class="event-actions">
+        <a href="#" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Agentic+Premier+League&dates=20260531T121000Z/20260531T170000Z&location=Moire+Café+Lounge+%26+Bar,+Gardens+Galleria+Mall,+Sector+38,+Noida&details=Buildathon+focused+on+Build+with+AI+using+Google+tech" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
+    </div>
+
+    <!-- Event 5: June 13 -->
+    <div class="event-card">
+      <div class="event-header">
+        <div>
+          <div class="event-title">AI Builders Meet-up 2026</div>
+          <div class="event-organizer">Indian Data Club</div>
+        </div>
+        <div class="event-badge">AI</div>
+      </div>
+      <div class="event-details">
+        <div class="detail-row">
+          <div class="detail-icon">📅</div>
+          <div class="detail-content">
+            <div class="detail-label">Date</div>
+            <div class="detail-value">Saturday, June 13, 2026 • 10:30 - 13:30</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">📍</div>
+          <div class="detail-content">
+            <div class="detail-label">Location</div>
+            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=ThoughtWorks+Technologies+Gurugram" target="_blank">ThoughtWorks Technologies, Gurugram, Haryana</a></div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">🎤</div>
+          <div class="detail-content">
+            <div class="detail-label">Speakers</div>
+            <div class="detail-value">Nitish Singh (Founder @CampusX)</div>
+          </div>
+        </div>
+      </div>
+      <div class="event-actions">
+        <a href="https://luma.com/2782mgfb" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AI+Builders+Meet-up+2026&dates=20260613T050000Z/20260613T080000Z&location=ThoughtWorks+Technologies,+Gurugram,+Haryana&details=Career+navigation+in+the+age+of+AI+%2B+Hands-on+workshop" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
+    </div>
+
+    <!-- Event 6: June 20 -->
+    <div class="event-card">
+      <div class="event-header">
+        <div>
+          <div class="event-title">Builders Connect: The Delhi Edition</div>
+          <div class="event-organizer">Flutter Delhi 🤝 FFDG New Delhi</div>
+        </div>
+        <div class="event-badge">Flutter</div>
+      </div>
+      <div class="event-details">
+        <div class="detail-row">
+          <div class="detail-icon">📅</div>
+          <div class="detail-content">
+            <div class="detail-label">Date</div>
+            <div class="detail-value">June 20th, 2026</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">📍</div>
+          <div class="detail-content">
+            <div class="detail-label">Location</div>
+            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=Masters'+Union+School+of+Business+Gurugram" target="_blank">Masters' Union School of Business, Gurugram, Haryana</a></div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">💰</div>
+          <div class="detail-content">
+            <div class="detail-label">Cost</div>
+            <div class="detail-value">Free entry, limited seats</div>
+          </div>
+        </div>
+      </div>
+      <div class="event-actions">
+        <a href="https://luma.com/384qnir0" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Builders+Connect:+The+Delhi+Edition&dates=20260620T000000Z/20260620T040000Z&location=Masters'+Union+School+of+Business,+Gurugram,+Haryana&details=Flutter+developers+%2B+FlutterFlow+creators+meetup" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
+    </div>
+
+    <!-- Event 7: Aug 12-15 -->
+    <div class="event-card">
+      <div class="event-header">
+        <div>
+          <div class="event-title">Bharatiya Vyapar Mahotsav 2026</div>
+          <div class="event-organizer">Confederation of All India Traders (CAIT)</div>
+        </div>
+        <div class="event-badge">Business</div>
+      </div>
+      <div class="event-details">
+        <div class="detail-row">
+          <div class="detail-icon">📅</div>
+          <div class="detail-content">
+            <div class="detail-label">Date</div>
+            <div class="detail-value">August 12-15, 2026 (4 days)</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">📍</div>
+          <div class="detail-content">
+            <div class="detail-label">Location</div>
+            <div class="detail-value"><a href="https://www.google.com/maps/search/?api=1&query=Bharat+Mandapam+Pragati+Maidan+New+Delhi" target="_blank">Bharat Mandapam, Pragati Maidan, New Delhi</a></div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-icon">💰</div>
+          <div class="detail-content">
+            <div class="detail-label">Cost</div>
+            <div class="detail-value"><a href="https://www.eventbrite.com/e/bharatiya-vyapar-mahotsav-2026-tickets-1990095559390" target="_blank">Check Eventbrite for tickets</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="event-actions">
+        <a href="https://www.eventbrite.com/e/bharatiya-vyapar-mahotsav-2026-tickets-1990095559390" target="_blank" class="event-link">View Event →</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bharatiya+Vyapar+Mahotsav+2026&dates=20260812T000000Z/20260815T235959Z&location=Bharat+Mandapam,+Pragati+Maidan,+New+Delhi&details=India%27s+largest+national+trade+expo" target="_blank" class="calendar-link">📅 Add to Calendar</a>
+      </div>
     </div>
 
     <div class="footer">
