@@ -1,0 +1,13 @@
+{
+  "name": "delhi-events",
+  "version": "1.0.0",
+  "description": "Delhi Tech Events - Static HTML site",
+  "scripts": {
+    "deploy:vercel": "vercel --prod",
+    "deploy:cloudflare": "source ~/.nvm/nvm.sh && nvm use 22 && npx wrangler pages deploy . --project-name=delhi-events --branch main --commit-dirty=true",
+    "deploy:both": "npm run deploy:vercel && npm run deploy:cloudflare"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
